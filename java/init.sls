@@ -11,3 +11,7 @@ java-openjdk:
   file.append:
     - name: /root/.bash_profile
     - text: export JAVA_HOME={{ pillar['java_home'] }}
+
+  file.append:
+    - name: /vagrant/.bash_profile
+    - text: export JAVA_HOME={{ pillar['java_home'] }}
